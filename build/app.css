@@ -1,0 +1,42 @@
+:root {
+    --color-primary: #4b615c;
+    --color-on-primary: #eee;
+    --color-secondary: #e49b97;
+    --color-on-secondary: #222;
+    --color-surface: #ebd4d2;
+    --color-on-surface: #111;
+    --color-background: #ebd4d2;
+    --color-on-background: #222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--color-background);
+    color: var(--color-on-background);
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.content-grid, .full-width {
+    display: grid;
+    grid-template-columns: [fullwidth-start] 16px [breakout-start] 24px [content-start] 1fr [content-end] 24px [breakout-end] 16px [fullwidth-end];
+}
+
+.content-grid > * {
+    grid-column: content;
+}
+
+.content-grid > .breakout {
+    grid-column: breakout;
+}
+
+.content-grid > .full-width {
+    grid-column: fullwidth;
+}
