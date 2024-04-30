@@ -12,6 +12,7 @@
 * {
     margin: 0;
     padding: 0;
+    line-height: 1.5;
 }
 
 body {
@@ -29,14 +30,14 @@ a {
     grid-template-columns: [fullwidth-start] 16px [breakout-start] 24px [content-start] 1fr [content-end] 24px [breakout-end] 16px [fullwidth-end];
 }
 
-.content-grid > * {
+.content-grid > *, .full-width > * {
     grid-column: content;
 }
 
-.content-grid > .breakout {
+.content-grid > .breakout, .full-width > .breakout {
     grid-column: breakout;
 }
 
-.content-grid > .full-width {
+.content-grid > .full-width, .full-width > .full-width {
     grid-column: fullwidth;
 }
