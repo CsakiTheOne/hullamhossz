@@ -13,10 +13,9 @@
         position: relative;
         min-width: 100px;
         height: 24px;
-        background-color: var(--color-surface);
         border-radius: 16px;
         overflow: hidden;
-        border: var(--color-background) 4px solid;
+        border: transparent 4px solid;
         outline: var(--color-primary) 4px solid;
     }
 

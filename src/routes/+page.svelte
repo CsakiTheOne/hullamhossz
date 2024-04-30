@@ -2,6 +2,7 @@
     import Card from "$lib/components/Card.svelte";
     import CardTitle from "$lib/components/CardTitle.svelte";
     import Button from "$lib/components/Button.svelte";
+    import Footer from "$lib/components/Footer.svelte";
 </script>
 
 <main class="content-grid" style="row-gap: 16px;">
@@ -25,12 +26,7 @@
         </div>
     </Card>
 
-    <div
-        class="full-width"
-        style="display: flex; flex-direction: column; gap: 16px; padding: 16px; background: var(--color-primary); color: var(--color-on-primary);"
-    >
-        <p>Made by WholesomeWare</p>
-    </div>
+    <Footer />
 </main>
 
 <style>

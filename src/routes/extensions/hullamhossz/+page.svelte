@@ -2,6 +2,7 @@
     import Button from "$lib/components/Button.svelte";
     import Card from "$lib/components/Card.svelte";
     import ConnectionBar from "$lib/components/ConnectionBar.svelte";
+    import Footer from "$lib/components/Footer.svelte";
 
     let wavelengthLeft = 0;
     let wavelengthRight = 0;
@@ -73,10 +74,17 @@
             </div>
         </div>
     </Card>
+    
+    <Footer />
 </main>
 
 <style>
     main > * {
         text-align: center;
+    }
+
+    span {
+        padding: 8px;
+        font-size: 1.2rem;
     }
 </style>
