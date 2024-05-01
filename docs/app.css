@@ -18,6 +18,11 @@
 body {
     background: var(--color-background);
     color: var(--color-on-background);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: 'Times New Roman', serif;
 }
 
 a {
@@ -27,7 +32,7 @@ a {
 
 .content-grid, .full-width {
     display: grid;
-    grid-template-columns: [fullwidth-start] 16px [breakout-start] 24px [content-start] 1fr [content-end] 24px [breakout-end] 16px [fullwidth-end];
+    grid-template-columns: [fullwidth-start] 12px [breakout-start] 5% [content-start] 1fr [content-end] 5% [breakout-end] 12px [fullwidth-end];
 }
 
 .content-grid > *, .full-width > * {

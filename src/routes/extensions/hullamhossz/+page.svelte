@@ -126,6 +126,17 @@
         <span>/{wavelengthLeft + wavelengthRight}</span>
     </div>
 
+    <Button
+        on:click={() => {
+            wavelengthLeft = 0;
+            wavelengthRight = 0;
+            sympathyLeft = 0;
+            sympathyRight = 0;
+        }}
+    >
+        Újrakezdés
+    </Button>
+
     <Footer />
 </main>
 
